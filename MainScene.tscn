@@ -248,7 +248,6 @@ color = Color( 0.12549, 0.12549, 0.12549, 1 )
 polygon = PoolVector2Array( -999.24, 130.26, 1176.76, 130.26, 1176.76, -43.74, -999.24, -43.74 )
 
 [node name="HealthProgressBar" type="Node2D" parent="MainCamera2D/UIbox"]
-editor/display_folded = true
 position = Vector2( 100, 17.45 )
 
 [node name="HealthTextureProgress" type="TextureProgress" parent="MainCamera2D/UIbox/HealthProgressBar"]
@@ -268,7 +267,6 @@ scale = Vector2( 0.160321, 0.160321 )
 texture = ExtResource( 5 )
 
 [node name="LivesCounter" type="Node2D" parent="MainCamera2D/UIbox"]
-editor/display_folded = true
 script = ExtResource( 6 )
 
 [node name="Panel" type="Panel" parent="MainCamera2D/UIbox/LivesCounter"]
@@ -306,7 +304,6 @@ autoplay = "TextBlink"
 anims/TextBlink = SubResource( 5 )
 
 [node name="ScoreDisplay" type="Node2D" parent="MainCamera2D/UIbox"]
-editor/display_folded = true
 position = Vector2( 492.098, 37.9998 )
 script = ExtResource( 9 )
 
@@ -318,7 +315,7 @@ margin_bottom = 21.9
 custom_styles/panel = ExtResource( 7 )
 
 [node name="ScoreIcon" type="Sprite" parent="MainCamera2D/UIbox/ScoreDisplay"]
-position = Vector2( -145.01, 2.86102e-006 )
+position = Vector2( -145.01, 2.86102e-06 )
 texture = ExtResource( 10 )
 
 [node name="ScoreDisplayLabel" type="Label" parent="MainCamera2D/UIbox/ScoreDisplay"]
@@ -366,12 +363,11 @@ normal = ExtResource( 15 )
 action = "FIRE"
 
 [node name="EnemyStartMoveTriggers2" type="Node2D" parent="MainCamera2D"]
-editor/display_folded = true
 visible = false
 position = Vector2( 7.716, 0 )
 
 [node name="LandEnemyTrigger" type="Area2D" parent="MainCamera2D/EnemyStartMoveTriggers2"]
-position = Vector2( 1.19209e-005, -80.1354 )
+position = Vector2( 1.19209e-05, -80.1354 )
 z_index = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MainCamera2D/EnemyStartMoveTriggers2/LandEnemyTrigger"]
@@ -385,7 +381,6 @@ z_index = 9
 shape = SubResource( 8 )
 
 [node name="FlashFXPolygon2D" type="Polygon2D" parent="MainCamera2D"]
-editor/display_folded = true
 position = Vector2( 77.1713, -16.0635 )
 scale = Vector2( 1.1885, 1.1885 )
 z_index = 999
@@ -397,10 +392,8 @@ script = ExtResource( 16 )
 anims/Flash = SubResource( 9 )
 
 [node name="Terrain" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Level1" type="Node2D" parent="Terrain"]
-editor/display_folded = true
 
 [node name="RouteTileMap" type="TileMap" parent="Terrain/Level1"]
 tile_set = ExtResource( 17 )
@@ -420,7 +413,6 @@ format = 1
 tile_data = PoolIntArray( -5832685, 5, 0, -5701628, 5, 65537, -5570547, 5, 1, -4915199, 4, 65538, -4587502, 5, 65536, -3932158, 5, 1, -3866621, 5, 65537, -3407855, 5, 0, -3276783, 5, 1, -1966078, 5, 65537, -1900542, 5, 1, -1245166, 4, 2, -1179630, 4, 0, -1048574, 5, 65536, -655343, 5, 65537, -196602, 5, 0, -196595, 5, 0, -131066, 5, 0, -131059, 5, 0 )
 
 [node name="Level2" type="Node2D" parent="Terrain"]
-editor/display_folded = true
 
 [node name="RouteTileMap" type="TileMap" parent="Terrain/Level2"]
 tile_set = ExtResource( 17 )
@@ -440,7 +432,6 @@ format = 1
 tile_data = PoolIntArray( -13041659, 5, 65536, -12517357, 5, 1, -12058623, 5, 65537, -10944502, 5, 0, -10485751, 2, 0, -10223606, 4, 65537, -9240574, 5, 1, -9043952, 5, 65537, -8257526, 5, 65536, -7471104, 5, 0, -7012334, 4, 2, -6356990, 5, 0, -6291454, 5, 0, -6225918, 5, 0, -6160368, 5, 65536 )
 
 [node name="Level3" type="Node2D" parent="Terrain"]
-editor/display_folded = true
 position = Vector2( 0, -10761.6 )
 
 [node name="RouteTileMap" type="TileMap" parent="Terrain/Level3"]
@@ -461,7 +452,6 @@ format = 1
 tile_data = PoolIntArray( -13041650, 5, 65537, -12845053, 5, 0, -12779517, 5, 0, -12713981, 5, 0, -12451824, 5, 65536, -11862015, 5, 65537, -11796479, 5, 1, -11796478, 5, 0, -11206639, 4, 1, -11141103, 4, 65537, -10420221, 5, 65536, -10026992, 5, 1, -10026991, 5, 0, -9175039, 5, 65537, -9109503, 5, 0, -8257519, 2, 0, -7536639, 5, 65536, -6946800, 5, 1, -6291453, 5, 65537, -6029298, 5, 0 )
 
 [node name="Level4" type="Node2D" parent="Terrain"]
-editor/display_folded = true
 position = Vector2( 0, -21495.2 )
 
 [node name="RouteTileMap" type="TileMap" parent="Terrain/Level4"]
@@ -482,7 +472,6 @@ format = 1
 tile_data = PoolIntArray( -12976124, 5, 65537, -12910589, 5, 0, -12910588, 5, 0, -12648438, 5, 65536, -12124147, 5, 65537, -12058611, 5, 1, -11927545, 2, 0, -11665400, 4, 65537, -10420223, 5, 65537, -10354687, 5, 1, -10354686, 5, 0, -9699309, 5, 65536, -9043959, 4, 1, -8978423, 4, 2, -8978422, 4, 65537, -8454135, 5, 65536, -7995373, 5, 65537, -7929837, 5, 0, -7340017, 5, 65537, -7274481, 5, 1, -6946814, 4, 65538, -6881278, 4, 1, -6422514, 5, 65536, -5963771, 5, 1, -5963770, 5, 0 )
 
 [node name="Level5" type="Node2D" parent="Terrain"]
-editor/display_folded = true
 position = Vector2( 0, -32243.8 )
 
 [node name="RouteTileMap" type="TileMap" parent="Terrain/Level5"]
@@ -525,7 +514,6 @@ format = 1
 tile_data = PoolIntArray( -24182760, 2, 0, -23920614, 4, 65538, -9633783, 5, 65536, -9437177, 5, 0, -9437172, 5, 0, -8912889, 5, 1, -8912883, 5, 1, -8060920, 4, 65538, -5898232, 4, 65536 )
 
 [node name="Fuel" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Level1" type="Node2D" parent="Fuel"]
 
@@ -612,7 +600,6 @@ scale = Vector2( 1.4, 1.5 )
 rewardPoints = 80
 
 [node name="Level3" type="Node2D" parent="Fuel"]
-editor/display_folded = true
 position = Vector2( 0, -10761.6 )
 
 [node name="FuelItem" parent="Fuel/Level3" instance=ExtResource( 20 )]
@@ -747,10 +734,8 @@ rewardPoints = 80
 [node name="Enemies" type="Node" parent="."]
 
 [node name="Level1" type="Node2D" parent="Enemies"]
-editor/display_folded = true
 
 [node name="LandType1" type="Node2D" parent="Enemies/Level1"]
-editor/display_folded = true
 
 [node name="EnemyLandOne" parent="Enemies/Level1/LandType1" instance=ExtResource( 21 )]
 position = Vector2( 971.626, -1308.28 )
@@ -798,7 +783,6 @@ rewardPoints = 60
 moveSpeed = 450
 
 [node name="LandType2" type="Node2D" parent="Enemies/Level1"]
-editor/display_folded = true
 
 [node name="EnemyLandTwo" parent="Enemies/Level1/LandType2" instance=ExtResource( 22 )]
 position = Vector2( 1096.82, -915.461 )
@@ -834,10 +818,8 @@ moveSpeed = 450
 [node name="Flying" type="Node2D" parent="Enemies/Level1"]
 
 [node name="Level2" type="Node2D" parent="Enemies"]
-editor/display_folded = true
 
 [node name="LandType1" type="Node2D" parent="Enemies/Level2"]
-editor/display_folded = true
 
 [node name="EnemyLandOne" parent="Enemies/Level2/LandType1" instance=ExtResource( 21 )]
 position = Vector2( 1293.6, -9727.68 )
@@ -886,7 +868,6 @@ moveSpeed = 450
 startFromLeft = true
 
 [node name="LandType2" type="Node2D" parent="Enemies/Level2"]
-editor/display_folded = true
 
 [node name="EnemyLandTwo" parent="Enemies/Level2/LandType2" instance=ExtResource( 22 )]
 position = Vector2( 1215.24, -9210.8 )
@@ -944,7 +925,6 @@ moveSpeed = 450
 position = Vector2( 0, -10761.6 )
 
 [node name="LandType1" type="Node2D" parent="Enemies/Level3"]
-editor/display_folded = true
 
 [node name="EnemyLandOne" parent="Enemies/Level3/LandType1" instance=ExtResource( 21 )]
 position = Vector2( 1271.55, -10000.6 )
@@ -985,7 +965,6 @@ moveSpeed = 450
 startFromLeft = true
 
 [node name="LandType2" type="Node2D" parent="Enemies/Level3"]
-editor/display_folded = true
 
 [node name="EnemyLandTwo" parent="Enemies/Level3/LandType2" instance=ExtResource( 22 )]
 position = Vector2( 1246.33, -9169.96 )
@@ -1042,7 +1021,6 @@ rewardPoints = 30
 moveSpeed = 450
 
 [node name="Flying" type="Node2D" parent="Enemies/Level3"]
-editor/display_folded = true
 
 [node name="EnemyFlyingOne" parent="Enemies/Level3/Flying" instance=ExtResource( 23 )]
 position = Vector2( 1946.37, -12720.8 )
@@ -1064,7 +1042,6 @@ moveSpeed = 950
 position = Vector2( 0, -21495.2 )
 
 [node name="LandType1" type="Node2D" parent="Enemies/Level4"]
-editor/display_folded = true
 
 [node name="EnemyLandOne" parent="Enemies/Level4/LandType1" instance=ExtResource( 21 )]
 position = Vector2( 1208.04, -10486 )
@@ -1078,7 +1055,6 @@ moveSpeed = 450
 startFromLeft = true
 
 [node name="LandType2" type="Node2D" parent="Enemies/Level4"]
-editor/display_folded = true
 
 [node name="EnemyLandTwo" parent="Enemies/Level4/LandType2" instance=ExtResource( 22 )]
 position = Vector2( 1213.45, -9968.71 )
@@ -1147,7 +1123,6 @@ moveSpeed = 950
 position = Vector2( 0, -32243.8 )
 
 [node name="LandType1" type="Node2D" parent="Enemies/Level5"]
-editor/display_folded = true
 
 [node name="EnemyLandOne" parent="Enemies/Level5/LandType1" instance=ExtResource( 21 )]
 position = Vector2( 932.971, -9387.57 )
@@ -1232,7 +1207,6 @@ rewardPoints = 60
 moveSpeed = 450
 
 [node name="LandType2" type="Node2D" parent="Enemies/Level5"]
-editor/display_folded = true
 
 [node name="EnemyLandTwo" parent="Enemies/Level5/LandType2" instance=ExtResource( 22 )]
 position = Vector2( 858.781, -9092.37 )
@@ -1281,7 +1255,6 @@ moveSpeed = 950
 position = Vector2( 0, -32243.8 )
 
 [node name="LandType1" type="Node2D" parent="Enemies/Level6"]
-editor/display_folded = true
 
 [node name="EnemyLandOne" parent="Enemies/Level6/LandType1" instance=ExtResource( 21 )]
 position = Vector2( 1166.91, -19559.9 )
@@ -1305,7 +1278,6 @@ rewardPoints = 60
 moveSpeed = 450
 
 [node name="LandType2" type="Node2D" parent="Enemies/Level6"]
-editor/display_folded = true
 
 [node name="EnemyLandTwo" parent="Enemies/Level6/LandType2" instance=ExtResource( 22 )]
 position = Vector2( 902.953, -21044.7 )
@@ -1379,7 +1351,6 @@ rewardPoints = 100
 moveSpeed = 950
 
 [node name="CheckpointGates" type="Node" parent="."]
-editor/display_folded = true
 script = ExtResource( 24 )
 
 [node name="Checkpoint1" parent="CheckpointGates" instance=ExtResource( 25 )]
@@ -1403,7 +1374,6 @@ position = Vector2( 990.691, -51437.2 )
 rewardPoints = 500
 
 [node name="PlayerRat" type="Area2D" parent="."]
-editor/display_folded = true
 position = Vector2( 990, 0 )
 scale = Vector2( 2, 2 )
 z_index = 99
@@ -1478,7 +1448,6 @@ bus = "Steps"
 [node name="PlayerLaserMissles" type="Node2D" parent="."]
 
 [node name="GlobalAudio" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="MainLoopAudioStreamPlayer" type="AudioStreamPlayer" parent="GlobalAudio"]
 stream = ExtResource( 37 )

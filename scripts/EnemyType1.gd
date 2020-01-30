@@ -84,9 +84,10 @@ func processDie():
 	$CollisionPolygon2D.queue_free()
 	
 	var timer = Timer.new()
+	timer.set_autostart(true)
 	timer.connect("timeout", self, "queue_free")
 	timer.set_wait_time(2)
-	timer.start()
+	#timer.start()
 	
 func _on_VisibilityNotifier2D_viewport_exited(_viewport):
 	

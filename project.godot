@@ -15,7 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="10stycznia"
+config/name="RatRaidMobile"
+config/description="Mobile port"
 run/main_scene="res://MainScene.tscn"
 config/icon="res://icon.png"
 
